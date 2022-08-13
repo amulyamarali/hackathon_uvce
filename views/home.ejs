@@ -1,6 +1,6 @@
 <%- include("partials/header") -%>
 
-    <!-- <h1>Home</h1>
+<!-- <h1>Home</h1>
     <h5> <%= key_1 %> </h5> -->
 <section id="home_page">
   <div class="container-fluid">
@@ -15,24 +15,368 @@
         <img class="img-start_up" src="/images/start_up.jpeg" alt="img">
       </div>
     </div>
+    <!-- <div class="chat_icon">
+      <i class="fa-solid fa-comment"></i>
+    </div>
+    <div class="chat_box">
+
+    </div> -->
+    <div class="row">
+      <div class="col-lg-2">
+        <div class="card" style="width: 20rem; margin: 5em;">
+          <img class="card-img-top" src="/images/investors.jpg" alt="Card image cap">
+          <div class="card-body investors">
+            <h5 class="card-title">INVESTORS</h5>
+            <p class="card-text">Find one of the best Investors today </p>
+            <a href="investor" target="_parent" class="btn btn-primary">Investors</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="card" style="width: 20rem; margin: 5em;">
+          <img class="card-img-top" src="/images/resources.webp" alt="Card image cap">
+          <div class="card-body investors">
+            <h5 class="card-title">RESOURCES</h5>
+            <p class="card-text">Learn about the resources to refer</p>
+            <a href="resources" class="btn btn-primary">Click here</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="card" style="width: 20rem; margin: 5em;">
+          <img class="card-img-top" src="/images/tips.jpg" alt="Card image cap">
+          <div class="card-body investors">
+            <h5 class="card-title">STARTUP TIPS</h5>
+            <p class="card-text">Take some tips for your own start from the best</p>
+            <a href="tips" class="btn btn-primary">Tips</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="card" style="width: 20rem; margin: 5em;">
+          <img class="card-img-top" src="/images/marketing.jpg" alt="Card image cap">
+          <div class="card-body investors">
+            <h5 class="card-title">MARKETING STRATERGY</h5>
+            <p class="card-text">Gather digital marketing stratergies.</p>
+            <a href="stratergies" class="btn btn-primary">stratergies</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="card" style="width: 20rem;margin: 5em;">
+          <img class="card-img-top" src="/images/similar.webp" alt="Card image cap">
+          <div class="card-body investors">
+            <h5 class="card-title">DIFFERENT DOMAINS </h5>
+            <p class="card-text">Explore about your competetion</p>
+            <a href="similar" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
   </div>
 
 
-<%  posts.forEach( function(post){ %>
-<%    console.log(post.text_title); %>
-<%  }); %>
+  <%  posts.forEach( function(post){ %>
+  <%    console.log(post.text_title); %>
+  <%  }); %>
 
-<%  for (var i=0; i<posts.length; i++){ %>
+  <%  for (var i=0; i<posts.length; i++){ %>
   <div style="margin-top: 50px">
     <h2><%= posts[i].text_title %></h2>
   </div>
-  <div >
-  <%  var res = posts[i].text_post.slice(0,100) + "..." ; %>
-  <h5><%= res %></h5>
-  <a href="posts/<%= posts[i].text_title %>">Read more</a>
+  <div>
+    <%  var res = posts[i].text_post.slice(0,100) + "..." ; %>
+    <h5><%= res %></h5>
+    <a href="posts/<%= posts[i].text_title %>">Read more</a>
   </div>
-<%  } %>
+  <%  } %>
 </section>
+
+
+
+<section id="guide_cards">
+
+  <div class="guide_head">
+    <h2>LEARN ABOUT STARTUPS</h2>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-3 col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h3>1</h3>
+        </div>
+
+        <div class="card-body">
+          <p>WHAT IS STARTUP</p>
+          <a href="#What_is_startup" class="btn btn-light te">Explore</a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="col-lg-3 col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h3>2</h3>
+        </div>
+
+        <div class="card-body">
+          <p>TYPES OF STARTUPS</p>
+          <a href="#types_of_startups" class="btn btn-light te">Explore</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-lg-3 col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h3>3</h3>
+        </div>
+        <div class="card-body">
+          <p>Examples of Startups</p>
+          <a href="#Examples" class="btn btn-light te">Explore</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-lg-3 col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h3>4</h3>
+        </div>
+        <div class="card-body">
+          <p>Adv and Disadv of startups</p>
+          <a href="#FAQS" class="btn btn-light te">Explore</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-lg-3 col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h3>5</h3>
+        </div>
+        <div class="card-body">
+          <p>Introduction</p>
+          <a href="#Intro" class="btn btn-light te">Explore</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-lg-3 col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h3>6</h3>
+        </div>
+        <div class="card-body">
+          <p>Benefits</p>
+          <a href="#success_rate" class="btn btn-light te">Explore</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-lg-3 col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h3>7</h3>
+        </div>
+        <div class="card-body">
+          <p>Complete Guide</p>
+          <a href="#guide" class="btn btn-light te">Explore</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-lg-3 col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h3>8</h3>
+        </div>
+        <div class="card-body">
+          <p>Hub for startups</p>
+          <a href="#India_hub" class="btn btn-light te">Explore</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<section id="What_is_startup">
+  <div class="chart1">
+    <h2 style="text-align:center;">What's Startup</h2>
+    <p class="chart1_para">A startup is a young company established by one or more entrepreneurs to create unique and irreplaceable products or services.</p>
+    <p class="chart1_para">It aims at bringing innovation and building ideas quickly.</p>
+    <p class="chart1_para">A startup or start-up is a company or project undertaken by an entrepreneur to seek, develop, and validate a scalable business model. While entrepreneurship refers to all new businesses, including self-employment and
+      businesses that never intend to become registered, startups refer to new businesses that intend to grow large beyond the solo founder. At the beginning, startups face high uncertainty and have high rates of failure, but a minority of them do go
+      on to be successful and influential.</p>
+
+  </div>
+
+</section>
+
+<section id="types_of_startups">
+  <div class="chart1">
+    <h2 style="text-align:center;">Types of StartUps</h2>
+
+    <p class="chart1_para"><i>Scalable startups</i>: Companies in a tech niche often belong to this group. Since technology companies often have great potential, they can easily access the global market. Tech businesses can receive financial support
+      from investors and grow into international companies. Examples of such startups include Google, Uber, Facebook, and Twitter. These startups hire the best workers and search for investors to boost the development of their ideas and scale.</p>
+    <br>
+    <p class="chart1_para"><i>Small business startups</i>: These businesses are created by regular people and are self-funded. They grow at their own pace and usually have a good site but don’t have an app. Grocery stores, hairdressers, bakers, and
+      travel agents are the perfect examples.</p>
+    <br>
+    <p class="chart1_para"><i>Lifestyle startups</i>: People who have hobbies and are eager to work on their passion can create a lifestyle startup. They can make a living by doing what they love. We can see a lot of examples of lifestyle startups.
+      Let’s take dancers, for instance. They actively open online dance schools to teach children and adults to dance and earn money this way.</p>
+    <br>
+
+    <p class="chart1_para"><i>Buyable startups</i>: In the technology and software industry, some people design a startup from scratch to sell it to a bigger company later. Giants like Amazon and Uber buy small startups to develop them over time and
+      receive benefits.</p>
+    <br>
+
+    <p class="chart1_para"><i>Big business startups</i>: Large companies have a finite lifespan since customers’ preferences, technologies, and competitors change over time. That’s why businesses should be ready to adapt to new conditions. As a
+      result, they design innovative products that can satisfy the needs of modern customers.</p>
+    <br>
+
+    <p class="chart1_para"><i>Social startups</i>: These startups exist despite the general belief that the main aim of all startups is to earn money. There are still companies designed to do good for other people, and they are called social
+      startups. Examples include charities and non-profit organizations that exist thanks to donations. For instance, Code.org, a non-profit organization, encourages school students in the US to learn computer science.</p>
+    <br>
+
+
+
+  </div>
+
+</section>
+
+<section id="Examples">
+  <div class="chart1">
+    <h2 style="text-align:center;">Examples of Start-Ups</h2>
+    <p class="chart1_para">CRED</p>
+    <p class="chart1_para">Vernacular.ai</p>
+    <p class="chart1_para">PharmEasy</p>
+    <p class="chart1_para">Digit Insurance</p>
+    <p class="chart1_para">Meesho</p>
+    <p class="chart1_para">Groww</p>
+    <p class="chart1_para">Nykaa</p>
+    <p class="chart1_para">Udaan</p>
+    <p class="chart1_para">Dream11</p>
+    <p class="chart1_para">Swiggy</p>
+    <p class="chart1_para">Instamojo</p>
+    <p class="chart1_para">PostMan</p>
+    <p class="chart1_para">Delhivery</p>
+    <p class="chart1_para">Slice</p>
+    <p class="chart1_para">InMobi</p>
+    <p class="chart1_para">Practo</p>
+    <p class="chart1_para">Boat</p>
+    <p class="chart1_para">Skyroot Aerospace</p>
+    <p class="chart1_para">LivSpace</p>
+    <p class="chart1_para">Ather</p>
+
+
+  </div>
+
+</section>
+
+<section id="FAQS">
+  <div class="chart1">
+    <h2 style="text-align:center;">Advantages and disadvantages</h2>
+    <p class="chart1_para"> There are a variety of advantages to working for a startup. More responsibility and opportunities to learn are two. As startups have fewer employees than large, established companies, employees tend to wear many hats, working in a variety of roles, which leads to more responsibility as well as opportunities to learn.
+
+Startups tend to be more relaxed in nature, making the workplace more of a communal experience, with flexible hours, increased employee interaction, and flexibility. Startups tend to also have better workplace benefits, such as nurseries for children, free food, and shorter workweeks.
+
+The work at startups can also be more rewarding as innovation is welcomed and managers allow talented employees to run with ideas with little supervision.
+
+One of the primary disadvantages of a startup is increased risk. This primarily applies to the success and longevity of a startup. New businesses need to prove themselves and raise capital before they can start turning a profit. Keeping investors happy with the startup's progress is critical. The risk of shutting down or not having enough capital to continue operations before turning a profit is ever-present.
+
+Long hours are characteristic of startups as everyone is working toward the same goal—to see the startup succeed. This can lead to high-stress moments and sometimes compensation that isn't commensurate with the hours worked. Competition is also always high as there tend to be a handful of startups working on the same idea.</p>
+
+  </div>
+
+</section>
+
+<section id="Intro">
+  <div class="chart1">
+    <h2 style="text-align:center;">Introduction to StartUps</h2>
+    <p class="chart1_para">Last year has been a year of ups and downs, especially due to the COVID-19 pandemic, which hit across the globe. A lot many strong entrepreneurs in India have dived into business opportunities and tested their ideas. While some of them have failed, others thrived like anything. India supports the rise of startups because it has low-cost skilled labour, funding from national and international investors and opportunities to grow. According to Financial Express, the start-up funding has touched a new high in the year 2021. In addition to the huge venture capitalists, institutional investors and pension funds are also investing in many new online businesses.  In the period of Jan-March 2021, investors have infused around $4.4 billion into Indian startups and this amount is 26% more than the investments made last year, in the same quarter.  The top gainers in the funding deals is the Fintech and Financial Services companies (123) followed by Retail and Ecommerce companies (99) and EdTech companies (84).  This shows that even after the turbulence due to the pandemic COVID-19 in India, the startups have found a way to stay aloft.
+Looking at the most significant deals between companies in India, e.g., Walmart and Flipkart (having Myntra and PhonePe), it is not at all surprising to see that India is growing up as a hub of the biggest startups. One 97 Communications (PayTM), Ola cabs, Dream 11, Swiggy and Razorpay are a few of the rich valued Indian startups across the world. The country is now getting more startup unicorns, including companies from the sectors like Healthtech, social commerce, finance, and more. In business, Unicorn companies are those startups that value more than $ 1 billion. As of April 2021, there are more than 600 unicorns across the globe. According to Inc42, India got its 10 startups listed in the list of Unicorns in 2021. In this blog, we have compiled a list of a few companies which are among the top startups in India. These startups have survived incredibly over the years and are looking to expand their reach further.
+</p>
+
+  </div>
+
+</section>
+
+<section id="success_rate">
+  <div class="chart1">
+    <h2 style="text-align:center;">What Are the Benefits of Working for a Startup?</h2>
+    <p class="chart1_para">
+The benefits of working at a startup include greater opportunities to learn, increased responsibility, flexible work hours, a relaxed work environment, increased employee interaction, good workplace benefits, and innovation.</p>
+
+  </div>
+
+</section>
+
+<section id="guide">
+  <div class="chart1">
+    <h2 style="text-align:center;">What's Startup</h2>
+    <p class="chart1_para">
+      A well-defined vision
+      <br>
+Getting things done in a quick manner
+<br>
+efficient in managing its finances
+<br>
+Networking
+<br>
+Discipline
+ <br>
+ Determination
+ <br>
+ Ability to Adapt to Changes
+ <br>
+ Fundraising Skills
+ <br>
+Unwavering Belief
+<br>
+Master of Time Management
+<br>
+Execution
+<br>
+
+    </p>
+
+  </div>
+
+</section>
+
+<section id="India_hub">
+  <div class="chart1">
+    <h2 style="text-align:center;">Hub of Startups</h2>
+    <p class="chart1_para">India’s startup journey is not a recent one, with the 80s and the 90s, witnessing the inception of giants such as Infosys and Airtel, along with many others that went on to become stalwarts in their respective industries. India is a vast country and there remains a plethora of unsolved problems across various sectors. In the recent decade, Indian start-ups have tried to solve some of these problems by working on innovative ideas with regards to business models, products/services and technologies. And this trend will only accelerate in the future.
+
+Over the past few years, India has emerged as a major player in the global start-up ecosystem, along with the US, China, the UK and others, on the back of strong government policies to encourage entrepreneurship & innovation and significant funding from premier venture capital and private equity firms.
+
+India ranks 20th among the top 100 countries in the 2021 Global Startup Ecosystem Index by Startup Blink. Three Indian cities—Bengaluru, Delhi and Mumbai—also feature among the top 20 cities globally. Also, India’s ranking has improved from 81 to 48 in the Global Innovation Index 2020.
+
+Tech start-ups are leveraging increasing digital adoption and have already changed the lifestyle of young Indians – from shopping to ordering food from restaurants and streaming entertainment on-the-go, everything has moved to online platforms. With more success stories, improving digital infrastructure and favorable policies, these start-ups have the potential to impact the next leg of economic growth.</p>
+
+  </div>
+
+</section>
+
 
 
 
