@@ -1,0 +1,39 @@
+<%- include("partials/header") -%>
+
+    <!-- <h1>Home</h1>
+    <h5> <%= key_1 %> </h5> -->
+<section id="home_page">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6">
+        <h1>The Ultimate Guide to Startups</h1>
+        <h4>Discover how to launch a startup that's poised for growth, profit, and success.</h4>
+        <button type="button" class="btn btn-dark btn-lg download-btn"><i class="fa-brands fa-apple"></i> Download </button>
+        <button type="button" class="btn btn-outline-light btn-lg download-btn"><i class="fa-brands fa-google-play"></i> Download </button>
+      </div>
+      <div class="col-lg-6">
+        <img class="img-start_up" src="/images/start_up.jpeg" alt="img">
+      </div>
+    </div>
+  </div>
+
+
+<%  posts.forEach( function(post){ %>
+<%    console.log(post.text_title); %>
+<%  }); %>
+
+<%  for (var i=0; i<posts.length; i++){ %>
+  <div style="margin-top: 50px">
+    <h2><%= posts[i].text_title %></h2>
+  </div>
+  <div >
+  <%  var res = posts[i].text_post.slice(0,100) + "..." ; %>
+  <h5><%= res %></h5>
+  <a href="posts/<%= posts[i].text_title %>">Read more</a>
+  </div>
+<%  } %>
+</section>
+
+
+
+<%- include("partials/footer") -%>
