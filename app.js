@@ -14,8 +14,9 @@ var tipsContent ="";
 var stratergiesContent="";
 var similarContent="";
 
+const search_topics = ["blogs","courses","ebooks"];
+var s_top="";
 
-const posts = [];
 const app = express();
 
 app.use(bodyParser.urlencoded({extended: true}));
@@ -26,7 +27,6 @@ app.set('view engine', 'ejs');
 app.get("/",function(req,res){
   res.render("home",{
     key_1: homeStartingContent,
-    posts : posts
   });
 })
 
@@ -34,37 +34,40 @@ app.get("/about",function(req,res){
   res.render("about",{key_2: aboutContent});
 })
 
+app.get("/blogs",function(req,res){
+  res.render("blogs");
+})
+app.get("/courses",function(req,res){
+  res.render("courses");
+})
+app.get("/ebooks",function(req,res){
+  res.render("ebooks");
+})
+
 app.get("/contact",function(req,res){
   res.render("contact",{key_3: contactContent});
 })
 
-// app.get("/compose",function(req,res){
-//   res.render("compose");
-// })
-// app.post("/compose",function(req,res){
-//
-//   var text = {
-//     text_title: req.body.title,
-//     text_post: req.body.post
-//   };
-//
-//   posts.push(text);
-//   res.redirect("/");
-// })
 
-app.get("/posts/:topic",function(req,res){
-  const topic = _.lowerCase(req.params.topic);
-  posts.forEach( function(ele) {
-  if (_.lowerCase(ele.text_title) === topic){
+var flag=0;
 
-    res.render("post",{
-      title: ele.text_title,
-      body: ele.text_post
-    });
+app.post("/search",function(req,res){
+  s_top = req.body.search_input
+  search_topics.forEach(function(el){
+    if (_.lowerCase(el) === s_top){
+      flag+=1;
+      // res.redirect("/"+s_top)
+    }
+  });
+  if(flag===1){
+    res.redirect("/"+s_top);
+    flag=0;
   }
-
-});
+  else{
+    res.render("err");
+  }
 })
+
 
 app.get("/investor",function(req,res){
   res.render("investor",{key_4:investorsContent});
@@ -87,6 +90,6 @@ app.get("/similar",function(req,res){
 })
 
 
-app.listen(2000, function() {
+app.listen(process.env.PORT || 2000, function() {
   console.log("Server started on port 2000");
 });
