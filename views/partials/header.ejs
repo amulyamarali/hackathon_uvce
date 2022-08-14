@@ -3,13 +3,13 @@
 
 <head>
   <meta charset="utf-8">
-  <title>STARTECH</title>
+  <title>Daily Journal</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/styles.css">
   <script src="https://kit.fontawesome.com/d14688c56a.js" crossorigin="anonymous"></script>
 
-  <nav class="navbar navbar-default fixed-top">
+  <nav class="navbar navbar-default ">
     <div class="container">
       <div class="navbar-header">
         <a href="/"><p class="navbar-brand">STARTECH</p></a>
@@ -17,22 +17,20 @@
         <ul class="nav navbar-nav navbar-right">
           <!-- 6 -->
           <li id="home"><a href="/">HOME</a></li>
-
-          <!-- <li id="compose"><a href="compose">COMPOSE</a></li> -->
-          <li id="about"><a href="about">ABOUT US</a></li>
+          <li id="compose"><a href="compose">COMPOSE</a></li>
+          <li id="blogs"><a href="blogs">BLOGS</a></li>
           <li id="contact"><a href="contact">CONTACT US</a></li>
           <li>
             <div class="search">
-              <form class="" action="about" method="post">
-                <input type="text" name="" placeholder="what are looking for?">
-                <button type="submit">S</button>
+              <form class="" action="/search" method="POST">
+                <input type="text" name="search_input" placeholder="what are looking for?">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
               </form>
             </div>
           </li>
         </ul>
     </div>
   </nav>
-
 
   <body>
     <div class="container">
