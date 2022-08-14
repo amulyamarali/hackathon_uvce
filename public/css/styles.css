@@ -3,10 +3,10 @@
     padding-bottom: 70px;
 }
 .navbar {
-  /* position: fixed;
-  top: 0; */
-    background-color: #8FBDD3;
-    z-index: 1;
+    /* position: fixed;
+    top: 0; */
+    background-color: #00D7FF;
+    /* z-index: 1; */
     padding-top: 15px;
     padding-bottom: 15px;
     border: 0;
@@ -25,7 +25,10 @@
 }
 
 #home_page{
- background :linear-gradient(#8FBDD3, pink);
+ /* background :linear-gradient(#8FBDD3, pink); */
+ background :linear-gradient(#00D7FF,#fff);
+
+
  padding-left: 0;
  padding-right: 0;
 }
@@ -36,7 +39,7 @@
 
 
 .footer-padding {
-	padding-bottom: 60px;
+	padding-top: 100px;
 }
 
 .footer {
@@ -45,7 +48,8 @@
 	bottom: 0;
 	width: 100%;
 	height: 60px;
-	background-color: #0093AB;
+	background: linear-gradient(#fff,#00D7FF);
+
 }
 
 .footer p {
@@ -55,7 +59,136 @@
   color: #fff;
 }
 
-#footer{
+.footer{
   text-align: center;
-  padding: 50px;
+  margin-bottom:0;
+}
+
+#guide_cards{
+ padding: 100px;
+}
+
+.guide_head{
+ text-align: center;
+ padding-bottom: 20px;
+}
+
+.card-body{
+ text-align: center;
+ background: linear-gradient(purple,pink);
+ color: #fff;
+}
+
+
+.card-header{
+  text-align: center;
+  background:#FFC23C;
+}
+
+.card{
+
+  margin-block-start: 1em;
+    margin-block-end: 0em;
+    padding-right: 3em;
+}
+
+#social_icons{
+  padding: 5px;
+}
+
+.card-img-top{
+  width: 20rem;
+  padding-right: 3em;
+}
+
+.investors{
+  background: linear-gradient(purple, lightblue);
+  margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.te{
+  color: #fff;
+}
+
+.funding{
+  background: linear-gradient(#5BB318,#FCF8E8);
+  text-align: center;
+  font-family: cursive;
+}
+
+.chart1{
+  background: linear-gradient(#00D7FF,#fff);
+  padding: 15px;
+
+
+}
+
+.chart1_para{
+  color: #000;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.About_us{
+  background: linear-gradient(#5BB318,#FCF8E8);
+  text-align: center;
+  font-family: cursive;
+}
+
+.Contact_us{
+  background: linear-gradient(#5BB318,#FCF8E8);
+  text-align: center;
+  font-family: cursive;
+}
+
+#What_is_startup {
+  padding-bottom: 50px;
+}
+
+#types_of_startups{
+  padding-bottom: 50px;
+}
+#Examples{
+  padding-bottom: 50px;
+}
+#FAQS{
+  padding-bottom: 50px;
+}
+#Intro{
+  padding-bottom: 50px;
+}
+#success_rate{
+  padding-bottom: 50px;
+}
+#guide{
+  padding-bottom: 50px;
+}
+#India_hub{
+  padding-bottom: 50px;
+}
+/*
+.chat_icon{
+  position: fixed;
+  right: 30px;
+  bottom: 0;
+  font-size: 80px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.chat_box{
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  width: 400px;
+  height: 75vh;
+  background: #dedede;
+  z-index: 1000;
+  transition: all 0.3s ease-out;
+  transform: scaleY(0);
+} */
+
+.para{
+  font-size: 1.5em;
 }
