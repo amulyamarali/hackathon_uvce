@@ -5,7 +5,7 @@
 .navbar {
     /* position: fixed;
     top: 0; */
-    background-color: #00D7FF;
+    background-color: #AFB4FF;
     /* z-index: 1; */
     padding-top: 15px;
     padding-bottom: 15px;
@@ -25,8 +25,7 @@
 }
 
 #home_page{
- /* background :linear-gradient(#8FBDD3, pink); */
- background :linear-gradient(#00D7FF,#fff);
+ background :linear-gradient(#AFB4FF, #3B9AE1);
 
 
  padding-left: 0;
@@ -48,7 +47,7 @@
 	bottom: 0;
 	width: 100%;
 	height: 60px;
-	background: linear-gradient(#fff,#00D7FF);
+	background: #AFB4FF;
 
 }
 
@@ -75,7 +74,7 @@
 
 .card-body{
  text-align: center;
- background: linear-gradient(purple,pink);
+ background: linear-gradient(#AFB4FF, #3B9AE1);
  color: #fff;
 }
 
@@ -102,7 +101,7 @@
 }
 
 .investors{
-  background: linear-gradient(purple, lightblue);
+  background: linear-gradient(#FEB139,#AFB4FF);
   margin-block-start: 1em;
     margin-block-end: 1em;
 }
@@ -112,13 +111,13 @@
 }
 
 .funding{
-  background: linear-gradient(#5BB318,#FCF8E8);
+  background: linear-gradient(#AFB4FF, #3B9AE1);
   text-align: center;
   font-family: cursive;
 }
 
 .chart1{
-  background: linear-gradient(#00D7FF,#fff);
+  background: #E8F9FD;
   padding: 15px;
 
 
@@ -131,13 +130,13 @@
 }
 
 .About_us{
-  background: linear-gradient(#5BB318,#FCF8E8);
+  background: linear-gradient(#AFB4FF, #3B9AE1);
   text-align: center;
   font-family: cursive;
 }
 
 .Contact_us{
-  background: linear-gradient(#5BB318,#FCF8E8);
+  background: linear-gradient(#AFB4FF, #3B9AE1);
   text-align: center;
   font-family: cursive;
 }
